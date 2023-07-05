@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+header {
+    background: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    max-width: 1040px;
+    padding: 20px;
+    margin: 5rem auto;
+}
+
+/* homepage */
+
+.home {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 60px;
+}
+
+.workout-details {
+    background: #fff;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.workout-details h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.2em;
+    color: aqua;
+}
+
+.workout-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.workout-details span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #f1f1f1;
+    padding: 7px;
+    border-radius: 1rem 0 1rem;
+    cursor: pointer;
+}
+
+.workout-details span i {
+    font-size: 25px;
+}
+
+/* workout form */
+form {
+    margin-top: 15px;
+}
+
+form h3 {
+    margin: 0 0 10px 0;
+}
+
+label, input {
+    display: block;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background: aqua;
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
+
+div.error {
+    padding: 10px;
+    background: #fcbebe;
+    border: 1px solid #ff6d6d;
+    border-radius: 4px;
+    margin: 20px 0;
+    color: #ff6d6d;
+}
